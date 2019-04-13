@@ -7,6 +7,7 @@ public class MethodMemoization {
         Function1 memoizedFunc = Function1.of(MethodMemoization::square).memoized();
 
         memoizedFunc.apply(5);
+        // the second function call is not printed because of memoization
         memoizedFunc.apply(5);
     }
 
